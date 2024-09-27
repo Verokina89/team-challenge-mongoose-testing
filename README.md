@@ -3,25 +3,25 @@
 Téneis que crear una API en Node.js utilizando Express con mongoose que consistirá en una red social, donde podras crear, ver publicaciones, actulizar y borrarlas.
 
 La estructura será la siguiente:
-- config
-  - config.js // Código de la conexión a la base de datos.
-- env
-  - .env // Aquí debe ir la MONGO_URI que nos da mongoDB Atlas
-- models
-  - Post.js // Aqui ira el modelo de la publicación con los campos title, body y los timestamps.
-- routes 
+- config OK
+  - config.js // Código de la conexión a la base de datos. OK
+- env OK
+  - .env // Aquí debe ir la MONGO_URI que nos da mongoDB Atlas OK!
+- models OK
+  - Post.js // Aqui ira el modelo de la publicación con los campos title, body y los timestamps. OK!
+- routes OK
   - posts.js // Aquí estarán todas las rutas
-- index.js // Añadiremos nuestro servidor, conexión a la base de datos y uniremos el resto de la aplicación
+- index.js // Añadiremos nuestro servidor, conexión a la base de datos y uniremos el resto de la aplicación 
 
 ## Endpoints de la API
-- POST /create: Endpoint para crear una publicación.
-- GET /: Endpoint para traer todas las publicaciones.
-- GET /id/:_id: Endpoint para buscar publicación por id.
-- GET /title/:title: Endpoint para buscar una publicación por su titulo.
-- PUT /id/:_id: Endpoint para actualizar una publicación.
-- DELETE /id/:_id: Endpoint para eliminar una publicación.
+- POST /create: Endpoint para crear una publicación. OK!
+- GET /: Endpoint para traer todas las publicaciones. OK!
+- GET /id/:_id: Endpoint para buscar publicación por id. OK!
+- GET /title/:title: Endpoint para buscar una publicación por su titulo. OK!
+- PUT /id/:_id: Endpoint para actualizar una publicación. OK!
+- DELETE /id/:_id: Endpoint para eliminar una publicación. OK!
 
-## Testing
+## Testing OK!
 - Testea el endpoint - POST /create: Endpoint para crear una publicación.
 - Diapositivas de ayuda: https://docs.google.com/presentation/d/19YMjg7-9EGuMAnzIWk9SseAK9HlnfR1h/edit?usp=sharing&ouid=110594338309918268653&rtpof=true&sd=true
 
