@@ -12,7 +12,7 @@ const PostController = {
         } catch (error) {
             res
             .status(500)
-            .json({message:'There was a problem trying to create a post'})
+            .json({message:'There was a problem trying to create a post',error:error.message})
         }
     },
     //GET /: Endpoint para traer todas las publicaciones.
@@ -80,7 +80,19 @@ const PostController = {
             .status(500)
             .json({message:'There was a problem fetching post by title from server'})
         }
-    }
+    },
+    getPostsWithPagination : async (req,res) =>{
+        try {
+            
+            const pagination = await postModel.find().skip(0).limit(10)
+            res.status(200).json(pagination)
+
+        } catch (error) {
+            res
+            .status(500)
+            .json({message:'There was a problem fetching pagination by title from server'})
+        }
+    } 
 }
 
 module.exports = PostController
